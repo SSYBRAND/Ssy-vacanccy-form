@@ -48,6 +48,15 @@
             background-color: #0056a8;
         }
     </style>
+    <script>
+    document.getElementById("submit-button").addEventListener("click", function() {
+        var subject = "Job Application";
+        var body = "Here's my job application for the position at F Group Companies Limited.";
+        var mailtoLink = "mailto:ssybrand58@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        window.location.href = mailtoLink;
+    });
+</script>
+
 </head>
 <body><center>
   <img src="https://i.ibb.co/D4Wp462/Screenshot-20230914-155046-removebg-preview.png" width="100%"></center>
