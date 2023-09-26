@@ -48,14 +48,7 @@
             background-color: #0056a8;
         }
     </style>
-    <script>
-    document.getElementById("submit-button").addEventListener("click", function() {
-        var subject = "Job Application";
-        var body = "Here's my job application for the position at F Group Companies Limited.";
-        var mailtoLink = "mailto:ssybrand58@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
-        window.location.href = mailtoLink;
-    });
-</script>
+    
 
 </head>
 <body><center>
@@ -80,7 +73,9 @@
         <label for="cover-letter">Some words About Your Skill . (Optional):</label>
         <textarea id="cover-letter" name="cover-letter" rows="4" cols="50"></textarea><br>
 <a href="mailto: ssybrand58@gmail.com">
-        <input type="submit" id="submit-button" value="Submit Application"></a>
+    <form action="https://formspree.io/f/xgejngwe" method="post">
+    <!-- Your form fields -->
+    <input type="submit" id="submit-button" value="Submit Application"></a>
     </form>
     <br></br>
     <font color=blue><b>Notice:-</b></font>Client Can fill there data correctly and dont forget any section to fill.
